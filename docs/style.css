@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f3f1e7; /* Gazete kağıdı tonu */
+  font-family: "Libre Baskerville", serif;
+  color: #111;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.page {
+  max-width: 1080px;
+  margin: auto;
+  background: #fffdfa;
+  padding: 30px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.column {
+  border-left: 1px solid #ccc;
+  padding-left: 15px;
+}
+
+.column:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #bbb;
+  margin: 15px 0;
+}
+.section-divider {
+  text-align: center;
+  color: #999;
+  font-size: 0.8rem;
+  margin: 10px 0 10px;
+}
+@media (max-width: 768px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .column {
+    background-color: #fffdfa;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+}
